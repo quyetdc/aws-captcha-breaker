@@ -36,11 +36,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rtesseract", "~> 2.2"
   
   spec.add_development_dependency "rmagick", "~> 2.15"
-  spec.add_development_dependency "two_captcha"
 
-  spec.add_development_dependency "antigate"
   spec.add_development_dependency "multipart-post"  
   spec.add_development_dependency "antigate_api"
   
-
+  spec.add_development_dependency "dotenv"
 end

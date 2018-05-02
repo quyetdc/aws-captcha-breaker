@@ -57,6 +57,8 @@ If you want to automatically login to amazon as a bot, this project will be usef
 	chmod +x tesseract.sh
 	/.tesseract.sh
 	```
+
+- The project use `dotenv` gem to store environmental variables. Create a `.env` file and add your `antigate` key if you want to check `antigate` solution
 ### Usage
 
 Change your key in lib/captcha/antigate then run

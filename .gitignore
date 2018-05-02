@@ -9,3 +9,6 @@
 
 # rspec failure tracking
 .rspec_status
+
+# does not add env file
+.env

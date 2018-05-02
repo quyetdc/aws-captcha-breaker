@@ -1,5 +1,6 @@
 require 'net/http/post/multipart'
 require 'antigate_api'
+require 'dotenv/load'
 
 module Captcha
   class Antigate
@@ -15,7 +16,7 @@ module Captcha
         debug: false # Verborse or not
       }
 
-      client = AntigateApi::Client.new('ANTIGATE_KEY', options)
+      client = AntigateApi::Client.new(ENV['ANTIGATE_KEY'], options)
       captcha_id, captcha_answer = client.decode(@image_string)
 
       { capcha_id: captcha_id, captcha_answer: captcha_answer }
